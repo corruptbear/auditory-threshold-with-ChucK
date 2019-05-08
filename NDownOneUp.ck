@@ -104,9 +104,10 @@ class NDownOneUpPitchDiscrimination extends NDownOneUp{
     
     float centralFreq; //Hz, central frequency
     float secondFreq;
-   
-    0.5 => float duration;
-    0.05 => float pause;
+    
+    0.5::second => dur duration;
+       0.05::second => dur pause;
+
     0.5 => float stairDownFactor;
     2 => float stairUpFactor;
         
@@ -122,12 +123,12 @@ class NDownOneUpPitchDiscrimination extends NDownOneUp{
             centralFreq - stimulusSize => secondFreq;}        
         1.0 => s.gain;
         centralFreq => s.freq;
-        duration::second => now;
+        duration => now;
         0.0 => s.gain;
-        pause::second => now;
+        pause => now;
         1.0 => s.gain;
         secondFreq => s.freq;
-        duration::second => now;  
+        duration => now;  
         0.0=>s.gain;
     }
     
