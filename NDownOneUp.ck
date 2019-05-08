@@ -153,10 +153,7 @@ class NDownOneUpPitchDiscrimination extends NDownOneUp{
 }
 
 //A three down one up pitch discrimination test at 440Hz with initial interval size 12Hz
-<<<<<<< HEAD
-//test
-=======
->>>>>>> 8a78e39ec207a6cd89d90aec37ed97699e1a29fa
+
 NDownOneUpPitchDiscrimination x;
 12 => x.stimulusSize;
 3 => x.N;
