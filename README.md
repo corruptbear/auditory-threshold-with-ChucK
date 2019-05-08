@@ -6,6 +6,7 @@ Simple scripts for auditory threshold test using ChucK
 
 ### Usage
 Running through command-line tools.
+Example:
 ```shell 
 chuck NDownOneUp.ck
 ```
