@@ -132,7 +132,7 @@ class NDownOneUpPitchDiscrimination extends NDownOneUp{
         0.0=>s.gain;
     }
     
-    //check whether the response is positive
+    //check whether the response is correct
     fun int match(int response){
         if ((secondFreq - centralFreq > 0 && response==19) || (secondFreq - centralFreq < 0 && response==20)){
             return 1;}
